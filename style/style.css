@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: black;
+}
+
+@keyframes fadeInUp {
+
+    0% {
+    
+    opacity: 0;
+    transform: translateY(50px);
+    
+    }
+    100% {
+    
+    opacity: 1;
+    transform: translateY(0);
+    
+    }
+    }
+
+
+    @keyframes fadeInTite {
+
+        0% {
+        
+        opacity: 0;
+        transform: translateX(-50px);
+        
+        }
+        100% {
+        
+        opacity: 2;
+        transform: translateX(0);
+        
+        }
+        }
+
+        @keyframes sizeExample {
+            0% { width: 62vh; height: 55vh;}
+            50% { width: 63vh; height: 56vh;}
+            100% { width: 62vh; height: 55vh;}  
+        }
+
+        @keyframes colorExample {
+            0% { color: white;}
+            50% { color: #ce7712;}
+            100% { color: white;}  
+        }
+p, h1{
+    color: white;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-top: white 1px solid;
+}
+
+.container-head{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    box-shadow: 1px 1px 10px black;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+
+    animation: fadeInTite 0.5s ease-in-out;
+}
+
+
+
+#container-navigation{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 45px;
+}
+
+nav ul li a{
+    margin: 0 25px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    margin: 0 25px;
+    text-decoration: none;
+    color: gold;
+    font-weight: bolder;
+    font-size: 17px;
+
+}
+
+.container-body{
+    display: flex;
+    align-items: center;
+    background-image: url('https://lh3.googleusercontent.com/d/17jwtFdADJ5EmbuGHViHQYVPmAwBgkgVd'); /* Replace with a scary image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 89vh;
+    width: 100%;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.nContainer-about{
+    text-align: center;
+    font-size: 30px;
+    background-image: url('https://lh3.googleusercontent.com/d/17jwtFdADJ5EmbuGHViHQYVPmAwBgkgVd'); /* Replace with a scary image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: black;
+    height: 100%;
+
+    animation: fadeInUp 0.4s ease-in-out;
+}
+
+.nContainer-about h1{
+    margin-top: 40px;
+    margin-right: 100px;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+#left{
+    width: 70vh;
+    height: 50%;
+    margin-right: 14%;
+    margin-left: 5%;
+    animation: fadeInUp 0.5s ease-in-out;
+
+    
+}
+
+#right{
+    width: 62vh;
+    height: 55vh;
+    animation: fadeInUp 0.7s ease-in-out;
+    transition: 0.7s;
+
+    animation: sizeExample 0.5s infinite;
+}
+
+#right:hover{
+    transform: scale(1.1);
+}
+
+#greet{
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+#greet-1{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: 40px;
+    width: 300px;
+    margin-left: 45px;
+}
+
+#modifier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#logo1{
+    transform: rotate(40deg);
+}
+
+#left-about{
+    background-image: url('https://lh3.googleusercontent.com/d/1N0cIf2sF44qxGfGtohN3i_uVsZDaW7U0');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 65vh;
+    margin-left: 20px;
+    margin-bottom: 290px;
+    transition: 0.5s;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+#left-about:hover{
+    transform: scale(1.1);
+}
+
+
+#right-about{
+    display: flex;
+    height: 45vh;
+    width: 110vh;
+    margin-bottom: 50px;
+    margin-left: 15vh;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+#RL-about{
+    display: flex;
+    justify-content: start;
+    width: 30%;
+    height: 100%;
+}
+
+#LL-about{
+    display: flex;
+    justify-content: start;
+    width: 60%;
+    height: 100%;
+}
+
+
+#RL-about ul{
+    text-align: start;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+#RL-about p, #LL-about p{
+    margin-bottom: 10px;
+}
+
+
+#LL-about ul{
+    text-align: start;
+    list-style: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    padding-left: 0;
+}
+
+
+#right-exp{
+    height: 75vh;
+    width: 110vh;
+    margin-bottom: 15px;
+    margin-left: 8vh;
+}
+
+#RL-exp{
+    justify-content: start;
+    width: 100%;
+    height: max-content;
+}
+
+
+#LL-exp{
+    display: flex;
+    margin-left: 13.8%;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    justify-content: start;
+    width: 70%;
+    width: max-content;
+}
+
+#hire{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ce7712;
+    margin-left: 10px;
+    transition: 0.1s;
+}
+
+#hire:hover{
+    scale: 1.1;
+    background-color: #f5a623;
+}
+
+
+
+#RL-exp ul, #LL-exp ul{
+    text-align: start;
+    font-weight: 500;
+    color: white;
+    font-size: 25px;
+    margin: 0;
+}
+
+.container-contacts{
+    width: 60%;
+    height: 80%;
+}
+
+#top{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#icon{
+    width: 180px;
+    height: 180px;
+    margin-right: 10px;
+    margin-left: 50px;
+}
